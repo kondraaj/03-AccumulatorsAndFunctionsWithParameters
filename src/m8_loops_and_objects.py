@@ -23,6 +23,7 @@ def main():
     run_test_print_sequences3()
     run_test_draw_circles3()
     run_test_print_cosines()
+    run_test_draw_cosines_and_sines()
 
 
 def print_sequence1():
@@ -277,20 +278,27 @@ def draw_cosines_and_sines():
     """
     window = rg.RoseWindow(400, 400)
 
-    for k in range(101)
-        center = rg.Point( 200 + (80 * cos(k)), 200 + (80 * sin(k) ))
+    for k in range(101):
+        center = rg.Point(200 + (80 * math.cos(k)), 200 + (80 * math.sin(k)))
         circle = rg.Circle(center, 10)
         circle.attach_to(window)
-        
+
+    window.render()
+    window.close_on_mouse_click()
+
     # ------------------------------------------------------------------
-    # TODO: 9. Implement this function, per its doc-string above.
+    # DONE: 9. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
+
+
+def run_test_draw_cosines_and_sines():
     print()
     print('--------------------------------------------------')
     print('Running draw_cosines_and_sines:  See graphics window')
     print('--------------------------------------------------')
+    draw_cosines_and_sines()
 
 
 # ----------------------------------------------------------------------
