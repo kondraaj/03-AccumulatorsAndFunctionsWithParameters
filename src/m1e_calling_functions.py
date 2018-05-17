@@ -78,4 +78,3 @@ def hello_and_goodbye():
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
-
